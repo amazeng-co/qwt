@@ -34,7 +34,7 @@ list(FILTER QWT_HEADERS EXCLUDE REGEX ".*_glcanvas\\.h$")
 list(FILTER QWT_HEADERS EXCLUDE REGEX ".*_opengl_canvas\\.h$")
 
 # Create the Qwt library
-add_library(qwt SHARED)
+add_library(qwt STATIC)
 
 target_sources(qwt PRIVATE ${QWT_SOURCES} ${QWT_HEADERS})
 
